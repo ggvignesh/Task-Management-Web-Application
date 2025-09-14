@@ -4,9 +4,10 @@ services:
     env: node
     plan: free
     buildCommand: |
-      cd backend && npm install
-      cd ../frontend && npm install && npm run build
-      cd ../backend
+      npm install
+      cd frontend && npm install && npm run build
+      mkdir -p ../backend/public
+      cp -r build/* ../backend/public/
     startCommand: npm start
     envVars:
       - key: NODE_ENV
