@@ -166,9 +166,13 @@ io.on('connection', (socket) => {
 
 const PORT = process.env.PORT || 5000;
 
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
   console.log('Using in-memory storage (data resets on server restart)');
 });
 
+server.on('error', (err) => {
+  console.error('Server error:', err);
+  process.exit(1);
+});
 module.exports = { app, server, io };
