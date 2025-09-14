@@ -12,8 +12,6 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - key: MONGO_URI
-        value: mongodb+srv://username:password@cluster.mongodb.net/taskmanagement
       - key: JWT_SECRET
         generateValue: true
       - key: PORT
