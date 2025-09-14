@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Task Management Web Application
 
 ## Features
@@ -37,3 +38,6 @@
 ---
 
 **This project is intentionally simple and functional, focusing on practical implementation and clarity.**
+=======
+# Task-Management-Web-Application
+>>>>>>> cf5d1b7961ce1d412e46b2c822108f74a2669a24
